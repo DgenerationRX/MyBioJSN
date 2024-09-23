@@ -2,39 +2,128 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CV Jason Louis Antolin</title>
+    <title>Jason Louis Antolin - CV</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
     <style>
         body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
             background-color: #f4f4f4;
-            color: #333;
+            font-family: 'Arial', sans-serif;
         }
-        .container {
-            width: 80%;
-            margin: 0 auto;
-            padding: 20px;
-            background-color: #fff;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        }
-        h1 {
+        .header {
+            background-color: #4A90E2;
+            color: white;
+            padding: 40px 0;
             text-align: center;
         }
-        p {
-            line-height: 1.6;
+        .header h1 {
+            font-size: 48px;
+            font-weight: bold;
+        }
+        .section-title {
+            text-align: center;
+            margin: 20px 0;
+            color: #333;
+        }
+        .section-content {
+            margin: 0 auto;
+            padding: 20px;
+        }
+        .profile-card {
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            padding: 30px;
+        }
+        .skills {
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .skills .progress {
+            margin-bottom: 10px;
+            width: 100%;
+        }
+        .progress-bar {
+            transition: width 1s ease-in-out;
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #333;
+            color: white;
+        }
+        footer p {
+            margin: 0;
         }
     </style>
 </head>
 <body>
-    <div class="container">
+
+    <div class="header">
         <h1>Jason Louis Antolin</h1>
-        <p><strong>Tanggal Lahir:</strong> 15 Mei 2004</p>
-        <p><strong>Tempat Lahir:</strong> Makassar</p>
-        <p><strong>Alamat:</strong> Jl. Drs. Abdullah Silondae No.121, Mandonga, Kota Kendari</p>
-        <p><strong>Profil:</strong> Saya adalah seorang mahasiswa yang berdedikasi dengan pengalaman di berbagai bidang, antusias untuk belajar hal-hal baru dan menerapkan pengetahuan ke berbagai proyek.</p>
-        <p><strong>Email:</strong> jason@example.com</p>
+        <p>Student | Web Developer | Tech Enthusiast</p>
     </div>
+
+    <div class="container mt-5 section-content">
+        <h2 class="section-title">About Me</h2>
+        <div class="row justify-content-center">
+            <div class="col-md-8 profile-card">
+                <p>Hello! I'm Jason Louis Antolin, a dedicated student currently studying at STIMIK Bina Bangsa Kendari. I have a passion for technology, and I’m always eager to learn about the latest developments in the field both in Indonesia and globally. My interests range from software development to network engineering, and I am committed to continuous growth.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="container mt-5 section-content">
+        <h2 class="section-title">Skills</h2>
+        <div class="row justify-content-center">
+            <div class="col-md-8">
+                <div class="skills">
+                    <div class="progress">
+                        <div class="progress-bar bg-primary" role="progressbar" style="width: 90%;" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">HTML/CSS - 90%</div>
+                    </div>
+                    <div class="progress">
+                        <div class="progress-bar bg-success" role="progressbar" style="width: 80%;" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">JavaScript - 80%</div>
+                    </div>
+                    <div class="progress">
+                        <div class="progress-bar bg-warning" role="progressbar" style="width: 75%;" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">Python - 75%</div>
+                    </div>
+                    <div class="progress">
+                        <div class="progress-bar bg-danger" role="progressbar" style="width: 70%;" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100">Networking (Cisco) - 70%</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container mt-5 section-content">
+        <h2 class="section-title">Experience</h2>
+        <div class="row justify-content-center">
+            <div class="col-md-8 profile-card">
+                <ul>
+                    <li><strong>Smartphone Repair Technician</strong> - Independently serviced various smartphone models.</li>
+                    <li><strong>Software Developer</strong> - Worked on web development projects using Flask and Python.</li>
+                    <li><strong>Network Engineer Intern</strong> - Configured network systems using Cisco Packet Tracer.</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="container mt-5 section-content">
+        <h2 class="section-title">Contact</h2>
+        <div class="row justify-content-center">
+            <div class="col-md-8 profile-card">
+                <p><strong>Email:</strong> jason.antolin@example.com</p>
+                <p><strong>Phone:</strong> +62 812 3456 7890</p>
+                <p><strong>Location:</strong> Kendari, Indonesia</p>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Jason Louis Antolin. All Rights Reserved.</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
